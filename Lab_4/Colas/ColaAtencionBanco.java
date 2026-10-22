@@ -45,12 +45,17 @@ public class ColaAtencionBanco {
         }
 
         String atendido = cola[frente];
-        cola[frente] = null;
-        frente = frente + 1;
+        for (int i = frente; i < fin; i++) {
+            cola[i] = cola[i + 1];
+        }
+        cola[fin] = null;
+        fin = fin - 1;
 
-        if (frente > fin) {
+        if (fin < 0) {
             frente = -1;
             fin = -1;
+        } else {
+            frente = 0;
         }
         return atendido;
     }
