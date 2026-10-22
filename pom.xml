@@ -27,6 +27,7 @@
                         <include>Lab_1/**/*.java</include>
                         <include>Lab_2/**/*.java</include>
                         <include>Lab_3/**/*.java</include>
+                        <include>Lab_4/**/*.java</include>
                         <include>Servidor/**/*.java</include>
                     </includes>
                 </configuration>

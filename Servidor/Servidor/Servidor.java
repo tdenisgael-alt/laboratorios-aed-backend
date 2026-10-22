@@ -14,6 +14,7 @@ import Desordenados.Cliente;
 import Desordenados.Empleado;
 import Servidor_2.Servidor_2;
 import Servidor_3.Servidor_3;
+import Servidor_4.Servidor_4;
 
 public class Servidor {
     public static void main(String[] args) {
@@ -707,6 +708,7 @@ public class Servidor {
 
             Servidor_2.configurar(servidor);
             Servidor_3.configurar(servidor);
+            Servidor_4.configurar(servidor);
             servidor.start();
             System.out.println("Servidor iniciado en el puerto " + puerto);
         } catch (Exception e) {
